@@ -1,0 +1,42 @@
+;;; red --- theme
+;;; Commentary:
+;;; Code:
+
+(load-file "~/.doom.d/themes/common/variables.el")
+
+(setq background "#000000")
+(setq background-diff-added "#172717")
+(setq background-diff-added-highlight "#2c672c")
+(setq background-diff-removed "#441e1e")
+(setq background-diff-removed-highlight "#882929")
+(setq background-fringe "#0a0a0a")
+(setq background-low "#222222")
+(setq background-magit "#0a0a0a")
+(setq background-magit-branch-local "#007700")
+(setq background-magit-branch-remote "#770000")
+(setq background-magit-dark "#000000")
+(setq background-mode-line "#111111")
+(setq text-comment "#5f50b7")
+(setq text-constant "#867d91")
+(setq text-diff-added "#483d8d")
+(setq text-diff-added-highlight "#52ad3c")
+(setq text-diff-removed "#554444")
+(setq text-diff-removed-highlight "#ca6666")
+(setq text-function "#cd2626")
+(setq text-highlight-1 "#27ad61")
+(setq text-highlight-2 "#ad8d11")
+(setq text-highlight-3 "#b52439")
+(setq text-info "#ba9a74")
+(setq text-keyword "#483d8b")
+(setq text-line-number "#8b2323")
+(setq text-link "#9d7877")
+(setq text-low "#557755")
+(setq text-lower "#553333")
+(setq text-normal "#a52a2a")
+(setq text-preprocessor "#a8b4a8")
+(setq text-type "#cd5c5c")
+(setq text-variable "#a19d7c")
+(setq text-warning "#ff7c37")
+(setq text-whitespace "#4682b4")
+
+;;; red.el ends here
