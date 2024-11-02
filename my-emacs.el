@@ -1,4 +1,4 @@
-(setq debug-on-error t)
+;;(setq debug-on-error t)
 
 (setq evil-normal-state-cursor '("green" box))   ; Normal state
 (setq evil-insert-state-cursor '("red" bar))   ; Insert state
@@ -1506,6 +1506,9 @@ With a prefix arg, push the name onto the kill ring too."
 (global-hl-line-mode -1)
 (hl-line-mode -1)
 (setq global-hl-line-modes t)
+
+(setenv "JAVA_HOME" "/usr/lib/jvm/java-23-openjdk-amd64")
+(setq lsp-java-java-path "/usr/lib/jvm/java-1.23.0-openjdk-amd64/bin/java")
 
 (defun my-projectile-run-project ()
   "Set custom projectile-run-project command."
