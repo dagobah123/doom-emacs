@@ -1,5 +1,7 @@
 ;;(setq debug-on-error t)
 
+(add-hook 'emacs-lisp-mode-hook 'rainbow-mode)
+
 (setq evil-normal-state-cursor '("green" box))   ; Normal state
 (setq evil-insert-state-cursor '("red" bar))   ; Insert state
 (setq evil-visual-state-cursor '("yellow" box))   ; Visual state
@@ -281,6 +283,7 @@
               (name 16 -1)
               " " filename)))
 
+(global-set-key (kbd "M-b") 'ivy-switch-buffer)
 (global-set-key (kbd "C-<down>") 'my-scroll-down)
 (global-set-key (kbd "C-<escape>") 'evil-mode)
 (global-set-key (kbd "C-<next>") 'avy-goto-word-1)
@@ -330,6 +333,7 @@
 (global-set-key (kbd "C-n") 'helm-mini)
 (global-set-key (kbd "C-p") 'counsel-projectile-switch-project)
 (global-set-key (kbd "C-s") 'swiper)
+(global-set-key (kbd "C-r") 'helm-swoop)
 (global-set-key (kbd "C-t") 'my-grep-backward-copy-word-in-project)
 (global-set-key (kbd "C-v") 'helm-all-mark-rings)
 (global-set-key (kbd "C-x / c") 'my-class-overview)
