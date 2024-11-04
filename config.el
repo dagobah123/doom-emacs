@@ -81,3 +81,5 @@
 (setq INDEX-CHIAROSCURO INDEX-RED)
 (setq theme-index INDEX-RED)
 (my-set-theme INDEX-RED)
+
+(fset 'rainbow-delimiters-mode #'ignore)

@@ -4,6 +4,10 @@
 
 (load-file "~/.doom.d/themes/common/variables.el")
 
+(setq background-match-1 "#ffffff")
+(setq background-match-2 "#ffffff")
+(setq text-match-1 "#0000c0")
+(setq text-match-2 "#b30271")
 (setq alert-1 "#000000")
 (setq alert-2 "#000000")
 (setq alert-3 "#000000")
