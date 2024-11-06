@@ -1,5 +1,8 @@
 ;;(setq debug-on-error t)
 
+(setq global-whitespace-mode t)
+(setq display-line-numbers-type t)
+
 (add-hook 'emacs-lisp-mode-hook 'rainbow-mode)
 
 (setq evil-normal-state-cursor '("green" box))   ; Normal state

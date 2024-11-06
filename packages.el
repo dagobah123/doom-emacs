@@ -52,3 +52,4 @@
 (package! hydra)
 (package! rainbow-mode)
 (package! helm-swoop)
+(package! iedit)
