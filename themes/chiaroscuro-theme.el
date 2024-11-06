@@ -377,6 +377,8 @@
 `(message-header-subject ((t (:foreground ,text-normal ))))
 `(message-header-to ((t (:foreground ,text-normal ))))
 `(minibuffer-prompt ((t (:foreground ,text-normal :background unspecified ))))
+`(minimap-active-region-background ((t (:background ,background-region ))))
+`(minimap-current-line-face ((t (:foreground ,text-highlight-1 :background unspecified ))))
 `(mode-line ((t (:background ,background-mode-line :box (:line-width 8 :color ,background-mode-line) ))))
 `(mode-line-buffer-id ((t (:bold t ))))
 `(mode-line-highlight ((t (:background ,background-mode-line))))

@@ -53,3 +53,4 @@
 (package! rainbow-mode)
 (package! helm-swoop)
 (package! iedit)
+(package! minimap)
