@@ -1,5 +1,7 @@
 ;;(setq debug-on-error t)
 
+(ivy-rich-mode -1)
+
 (setq global-whitespace-mode t)
 (setq display-line-numbers-type t)
 
@@ -479,10 +481,11 @@
   (delete-other-windows))
 
 (defun my-buffers-list ()
-  "Display a list of buffers alphabetically (excluding those starting with '*') and open the selected buffer."
+  "Display list of buffers alphabetically (excluding those with '*')."
   (interactive)
   (let ((buffers (mapcar #'buffer-name (buffer-list))))
     ;; Exclude buffers starting with '*'
+    (setq buffers (seq-filter (lambda (buf) (not (string-prefix-p " *" buf))) buffers))
     (setq buffers (seq-filter (lambda (buf) (not (string-prefix-p "*" buf))) buffers))
     ;; Sort the remaining buffers alphabetically
     (setq buffers (sort buffers #'string<))
