@@ -334,7 +334,7 @@
 `(lsp-face-highlight-read ((t (:foreground ,text-function :background unspecified :bold t ))))
 `(lsp-face-highlight-write ((t (:foreground ,text-function :background unspecified :bold t ))))
 `(lsp-flycheck-warning-unnecessary-face ((t (:foreground ,text-warning :bold t :underline t ))))
-`(magit-blame-heading ((t (:foreground ,text-normal :background ,background-fringe ))))
+`(magit-blame-heading ((t (:foreground ,text-low :background ,background-fringe ))))
 `(magit-blame-highlight ((t (:foreground ,text-normal :background ,background-fringe ))))
 `(magit-blame-margin ((t (:foreground ,text-normal :background ,background-fringe ))))
 `(magit-branch-current ((t (:foreground ,text-normal :background unspecified :bold t :box (:line-width 1 :color ,text-normal) ))))

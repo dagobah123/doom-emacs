@@ -70,9 +70,9 @@
 (setq text-highlight-3 "#a52a2a")
 (setq text-info "#a52a2a")
 (setq text-keyword "#671616")
-(setq text-line-number "#6b4040")
+(setq text-line-number "#3d2525")
 (setq text-link "#a52a2a")
-(setq text-low "#a52a2a")
+(setq text-low "#3d2525")
 (setq text-lower "#a52a2a")
 (setq text-match-1 "#eead0e")
 (setq text-match-2 "#00ff00")
@@ -82,6 +82,6 @@
 (setq text-type "#ce4848")
 (setq text-variable "#a52a2a")
 (setq text-warning "#a52a2a")
-(setq text-whitespace "#4f3535")
+(setq text-whitespace "#583535")
 
 ;;; red.el ends here
