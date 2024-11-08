@@ -292,7 +292,7 @@
 `(helm-non-file-buffer ((t (:foreground ,text-lower :background unspecified :italic t ))))
 `(helm-selection ((t (:foreground ,text-match-1 :background ,background-match-1 :bold t ))))
 `(helm-selection-line ((t (:foreground ,text-match-2 :background ,background-match-1 :bold t ))))
-`(helm-separator ((t (:foreground ,text-low :background ,background-hl ))))
+`(helm-separator ((t (:foreground ,text-low :background ,background ))))
 `(helm-source-header ((t (:foreground ,text-normal :background unspecified :bold t :height 1.3 :family "Sans Serif" ))))
 `(helm-swoop-target-line-block-face ((t (:foreground ,text-hl :background unspecified ))))
 `(helm-swoop-target-line-face ((t (:foreground ,text-match-1 :background ,background-match-1 :bold t ))))

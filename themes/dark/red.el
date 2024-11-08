@@ -58,7 +58,7 @@
 (setq background-match-2 "#000000")
 (setq background-mode-line "#111111")
 (setq background-region "#270f0f")
-(setq text-comment "#a52a2a")
+(setq text-comment "#1a7642")
 (setq text-constant "#a52a2a")
 (setq text-diff-added "#a52a2a")
 (setq text-diff-added-highlight "#a52a2a")

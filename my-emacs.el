@@ -1,5 +1,7 @@
 ;;(setq debug-on-error t)
 
+(fringe-mode '(20 . 20))
+
 (ivy-rich-mode -1)
 
 (setq global-whitespace-mode t)
@@ -336,7 +338,6 @@
 (global-set-key (kbd "C-c y") 'my-copy-line-at-point)
 (global-set-key (kbd "C-k") 'helm-show-kill-ring)
 (global-set-key (kbd "C-n") 'helm-mini)
-(global-set-key (kbd "C-p") 'counsel-projectile-switch-project)
 (global-set-key (kbd "C-s") 'swiper)
 (global-set-key (kbd "C-r") 'helm-swoop)
 (global-set-key (kbd "C-t") 'my-grep-backward-copy-word-in-project)
@@ -1129,6 +1130,7 @@ With a prefix arg, push the name onto the kill ring too."
 (define-key my-prefix-map (kbd "o") 'occur)
 (define-key my-prefix-map (kbd "s") 'sort-lines)
 (define-key my-prefix-map (kbd "i") 'iedit-mode)
+(define-key my-prefix-map (kbd "p") 'counsel-projectile-switch-project)
 
 (define-key my-prefix-map (kbd "t n") 'tab-new)
 (define-key my-prefix-map (kbd "t c") 'tab-close)
