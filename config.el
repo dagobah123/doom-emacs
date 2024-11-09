@@ -83,3 +83,10 @@
 (my-set-theme INDEX-RED)
 
 (fset 'rainbow-delimiters-mode #'ignore)
+
+(use-package! eglot
+  :commands (eglot eglot-ensure)
+  :config
+  ;; Define the command to start JDTLS for Java
+  (add-to-list 'eglot-server-programs
+               '(java-mode . ("/home/computer/source/eclipse_jdt_language_server/jdt-language-server-1.41.0-202410311350/bin/jdtls"))))

@@ -570,23 +570,41 @@ With a prefix arg, push the name onto the kill ring too."
 (defun my-change-line-color ()
   "Change line number color when switching between evil-mode modes."
   (if (eq evil-state 'emacs)
-      (set-face-attribute 'hl-line nil :foreground "magenta3"))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "magenta3")
+        (set-face-attribute 'line-number-current-line nil :foreground "magenta3")))
   (if (eq evil-state 'insert)
-      (set-face-attribute 'hl-line nil :foreground "red3"))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "red3")
+        (set-face-attribute 'line-number-current-line nil :foreground "red3")))
   (if (eq evil-state 'motion)
-      (set-face-attribute 'hl-line nil :foreground "blue3"))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "blue3")
+        (set-face-attribute 'line-number-current-line nil :foreground "blue3")))
   (if (eq evil-state 'normal)
-      (set-face-attribute 'hl-line nil :foreground "green3"))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "green3")
+        (set-face-attribute 'line-number-current-line nil :foreground "green3")))
   (if (eq evil-state 'operator)
-      (set-face-attribute 'hl-line nil :foreground "gray3"))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "gray3")
+        (set-face-attribute 'line-number-current-line nil :foreground "gray3")))
   (if (eq evil-state 'replace)
-      (set-face-attribute 'hl-line nil :foreground "orange3"))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "orange3")
+        (set-face-attribute 'line-number-current-line nil :foreground "orange3")))
   (if (eq evil-state 'user)
-      (set-face-attribute 'hl-line nil :foreground "black"))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "black")
+        (set-face-attribute 'line-number-current-line nil :foreground "black")))
   (if (eq evil-state 'visual)
-      (set-face-attribute 'hl-line nil :foreground "yellow3"))
-   (if (bound-and-true-p cua-mode)
-      (set-face-attribute 'hl-line nil :foreground "dark turquoise")))
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "yellow3")
+        (set-face-attribute 'line-number-current-line nil :foreground "yellow3")))
+  (if (bound-and-true-p cua-mode)
+      (progn
+        (set-face-attribute 'hl-line nil :foreground "dark turquoise")
+        (set-face-attribute 'line-number-current-line nil :foreground "dark turquoise"))))
 
 (add-hook 'post-command-hook 'my-change-line-color)
 
@@ -1047,7 +1065,7 @@ With a prefix arg, push the name onto the kill ring too."
 
 (defvar java-function-regexp
   (concat
-   "^[ \t]*"                                   ;; leading white space
+   "^[ \t]*"                                   ;; leading dark turquoise space
    "\\(public\\|private\\|protected\\|"        ;; some of these 8 keywords
    "abstract\\|final\\|static\\|"
    "synchronized\\|native"
@@ -1124,8 +1142,8 @@ With a prefix arg, push the name onto the kill ring too."
 (define-key my-prefix-map (kbd "<SPC>") 'set-mark-command)
 
 (define-key my-prefix-map (kbd "C-l") 'avy-goto-line)
+(define-key my-prefix-map (kbd "w") 'avy-goto-word-1)
 (define-key my-prefix-map (kbd ";") 'iedit-mode)
-;; TODO dabbrev-expand
 (define-key my-prefix-map (kbd "l") 'recenter-top-bottom)
 (define-key my-prefix-map (kbd "o") 'occur)
 (define-key my-prefix-map (kbd "s") 'sort-lines)
@@ -1393,9 +1411,9 @@ With a prefix arg, push the name onto the kill ring too."
 
 ;;(load (concat EMACS-HOME "agenda"))
 
-(setq org-priority-faces '((?A . (:foreground "white" :background "red3"        :weight 'bold))
-                           (?B . (:foreground "white" :background "DarkOrange1" :weight 'bold))
-                           (?C . (:foreground "white" :background "green4"      :weight 'bold))))
+(setq org-priority-faces '((?A . (:foreground "dark turquoise" :background "red3"        :weight 'bold))
+                           (?B . (:foreground "dark turquoise" :background "DarkOrange1" :weight 'bold))
+                           (?C . (:foreground "dark turquoise" :background "green4"      :weight 'bold))))
 
 (setq org-startup-folded 'showeverything)
 

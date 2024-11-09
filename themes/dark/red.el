@@ -70,7 +70,7 @@
 (setq text-highlight-3 "#a52a2a")
 (setq text-info "#a52a2a")
 (setq text-keyword "#671616")
-(setq text-line-number "#3d2525")
+(setq text-line-number "#2c1a1a")
 (setq text-link "#a52a2a")
 (setq text-low "#3d2525")
 (setq text-lower "#a52a2a")

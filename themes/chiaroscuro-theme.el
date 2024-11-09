@@ -327,7 +327,7 @@
 `(lazy-highlight ((t (:foreground ,text-normal :background unspecified ))))
 `(lazy-highlight ((t (:foreground ,text-normal :background unspecified ))))
 `(line-number ((t (:foreground ,text-line-number :background unspecified ))))
-`(line-number-current-line ((t (:foreground ,text-line-number :background unspecified :bold t ))))
+`(line-number-current-line ((t (:foreground ,text-hl :background ,background :bold t ))))
 `(line-number-major-tick ((t (:foreground ,text-line-number :background unspecified ))))
 `(line-number-minor-tick ((t (:foreground ,text-line-number :background unspecified ))))
 `(link ((t (:foreground ,text-normal :underline t ))))
@@ -487,6 +487,16 @@
 `(xref-match ((t (:foreground ,text-normal :background unspecified :bold t ))))
 `(ztreep-diff-model-add-face ((t (:foreground ,text-normal :background unspecified ))))
 `(ztreep-diff-model-normal-face ((t (:foreground ,text-normal :background unspecified ))))
+`(avy-lead-face ((t (:foreground ,text-highlight-1 :background ,background :bold t ))))
+`(avy-lead-face-0 ((t (:foreground ,text-highlight-1 :background ,background :bold t ))))
+`(corfu-annotations ((t (:foreground ,text-normal :background ,background ))))
+`(corfu-bar ((t (:foreground ,text-normal :background ,background ))))
+;;`(corfu-border ((t (:foreground ,text-highlight-1 :background ,background ))))
+`(corfu-current ((t (:foreground ,text-highlight-1 :background ,background-fringe :bold t ))))
+`(corfu-default ((t (:foreground ,text-normal :background ,background ))))
+`(corfu-deprecated ((t (:foreground ,text-normal :background ,background ))))
+`(corfu-popupinfo ((t (:foreground ,text-normal :background ,background ))))
+
 )))
 
 ;;;###autoload
