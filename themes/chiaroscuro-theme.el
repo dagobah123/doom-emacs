@@ -496,7 +496,10 @@
 `(corfu-default ((t (:foreground ,text-normal :background ,background ))))
 `(corfu-deprecated ((t (:foreground ,text-normal :background ,background ))))
 `(corfu-popupinfo ((t (:foreground ,text-normal :background ,background ))))
-
+`(eglot-inlay-hint-face ((t (:foreground ,text-low :background ,background ))))
+`(eglot-mode-line ((t (:foreground ,text-low :background ,background ))))
+`(eglot-parameter-hint-face ((t (:foreground ,text-low :background ,background ))))
+`(eglot-type-hint-face ((t (:foreground ,text-low :background ,background ))))
 )))
 
 ;;;###autoload

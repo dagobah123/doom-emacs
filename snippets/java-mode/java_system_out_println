@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: java System.out.println
+# key: <sys
+# --
+
+System.out.println("$0");

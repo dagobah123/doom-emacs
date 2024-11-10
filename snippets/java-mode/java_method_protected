@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: java protected method
+# key: <pro
+# --
+
+/**
+ * TODO Describe functionality of this method.
+ */
+protected void $1($2) {
+    $0
+}

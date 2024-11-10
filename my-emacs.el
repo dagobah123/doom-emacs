@@ -290,7 +290,6 @@
               (name 16 -1)
               " " filename)))
 
-(global-set-key (kbd "M-b") 'ivy-switch-buffer)
 (global-set-key (kbd "C-<down>") 'my-scroll-down)
 (global-set-key (kbd "C-<escape>") 'evil-mode)
 (global-set-key (kbd "C-<next>") 'avy-goto-word-1)
@@ -1130,7 +1129,8 @@ With a prefix arg, push the name onto the kill ring too."
 ;;(define-key my-prefix-map (kbd "/") 'avy-goto-char-in-line)
 ;;(define-key my-prefix-map (kbd "C-/") 'avy-goto-char-in-line)
 
-(define-key my-prefix-map (kbd "b") 'list-bookmarks)
+(define-key my-prefix-map (kbd "b") 'ivy-switch-buffer)
+(define-key my-prefix-map (kbd "B") 'list-bookmarks)
 
 (define-key my-prefix-map (kbd "|") 'transpose-frame)
 

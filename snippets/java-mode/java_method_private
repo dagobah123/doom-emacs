@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: java private method
+# key: <pri
+# --
+
+/**
+ * TODO Describe functionality of this method.
+ */
+private void $1($2) {
+    $0
+}

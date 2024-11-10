@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: org drill
+# key: <o
+# --
+
+* Q :drill:
+$0
+** A

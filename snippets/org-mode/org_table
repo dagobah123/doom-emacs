@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: org table
+# key: <tab
+# --
+
+| $0  |   |
+|---+---|
+|   |   |

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: org source block emacs-lisp
+# key: <<<<
+# --
+
+#+BEGIN_SRC emacs-lisp
+$0
+#+END_SRC

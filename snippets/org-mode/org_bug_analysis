@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: org bug analysis
+# key: <<<
+# --
+
+Ticket: $1
+
+*** TODO reproduce issue
+
+$0
+
+*** TODO locate issue
+
+*** TODO fix issue
+

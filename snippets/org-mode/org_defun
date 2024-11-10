@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: defun
+# key: <d
+# --
+
+(defun my:$2 ()
+  "$1"
+  (interactive)
+  ($0))

@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: java test class
+# key: <uni
+# --
+
+package $1;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class $2Test {
+
+    @Test
+    public void $3Test() {
+
+        $0
+
+        assertEquals(null, null);
+    }
+
+}
