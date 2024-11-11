@@ -4,6 +4,8 @@
 
 (ivy-rich-mode -1)
 
+(org-indent-mode nil)
+
 (setq global-whitespace-mode t)
 (setq display-line-numbers-type t)
 
